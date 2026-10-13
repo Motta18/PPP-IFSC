@@ -37,16 +37,18 @@ JANELAS = {
     "meianoite": {"inicio": 1, "fim": 5},
 }
 
-GFZRNX = Path("../ferramentas/gfzrnx/gfzrnx.exe").resolve()
-CRX2RNX = Path("../ferramentas/RNXCMP_4.2.0_Windows_mingw_64bit/CRX2RNX.exe").resolve()
+# Caminhos absolutos, baseados no local do próprio script
+BASE = Path(__file__).parent.parent
+GFZRNX = (BASE / "ferramentas/gfzrnx/gfzrnx.exe").resolve()
+CRX2RNX = (BASE / "ferramentas/RNXCMP_4.2.0_Windows_mingw_64bit/CRX2RNX.exe").resolve()
 
 URL_IFSC = "http://sat94052.florianopolis.ifsc.edu.br/SAT94052/RINEXv211/{ano}/{dia}/IFSC/"
 URL_PPP = "https://servicodados.ibge.gov.br/api/v1/ppp"
 URL_BDG = f"https://servicodados.ibge.gov.br/api/v1/bdg/estacoes/{CODIGO_BDG}"
 
-PASTA_RBMC = Path("../dados/rbmc")
-PASTA_PPP = Path("../dados/ppp")
-PASTA_SAIDA = Path("../saida")
+PASTA_RBMC = BASE / "dados/rbmc"
+PASTA_PPP = BASE / "dados/ppp"
+PASTA_SAIDA = BASE / "saida"
 
 DELAY = 5
 
