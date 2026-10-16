@@ -5,3 +5,5 @@ pandas
 matplotlib
 pyproj
 streamlit
+openpyxl
+hatanaka

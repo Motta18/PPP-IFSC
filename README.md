@@ -20,7 +20,7 @@ O projeto responde à pergunta: **quanto o resultado do PPP se afasta da coorden
 - Conexão com a internet (acesso ao IBGE)
 
 Dependências Python (instaladas automaticamente pelo `setup.ps1`):
-`requests`, `curl_cffi`, `pyyaml`, `pandas`, `matplotlib`, `pyproj`, `streamlit`, `openpyxl`.
+`requests`, `curl_cffi`, `pyyaml`, `pandas`, `matplotlib`, `pyproj`, `streamlit`, `openpyxl`, `hatanaka`.
 
 ## Como instalar (setup)
 

@@ -19,7 +19,18 @@ Write-Host "Ambiente .venv314 encontrado. Ativando..." -ForegroundColor Green
 & $venvPath
 
 Write-Host "Ambiente ativo. Verificando Python..." -ForegroundColor Cyan
-python --version
+& "$PSScriptRoot\.venv314\Scripts\python.exe" --version
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "ERRO: nao foi possivel executar o Python do ambiente." -ForegroundColor Red
+    exit 1
+}
+
+Write-Host "Instalando dependencias de requirements.txt..." -ForegroundColor Cyan
+& "$PSScriptRoot\.venv314\Scripts\python.exe" -m pip install -r "$PSScriptRoot\requirements.txt"
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "ERRO: falha ao instalar as dependencias do projeto." -ForegroundColor Red
+    exit 1
+}
 
 Write-Host "Ambiente pronto para uso!" -ForegroundColor Green
 Write-Host "Para rodar o app: .\run.ps1" -ForegroundColor Yellow
