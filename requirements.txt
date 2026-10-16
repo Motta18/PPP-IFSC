@@ -1,0 +1,7 @@
+requests
+curl_cffi
+pyyaml
+pandas
+matplotlib
+pyproj
+streamlit

@@ -1,0 +1,14 @@
+email: "Delamotta18@gmail.com"
+estacao: "IFSC"
+codigo_bdg: "94052"
+modelo_antena: "TRM57971.00"
+altura_antena: 0.0081
+datas:
+  - data: "2020-01-01"
+    horas: [15, 16, 17, 18]
+  - data: "2020-06-21"
+    horas: [16, 17, 18, 19]
+intervalo_envio_segundos: 2
+diretorio_rinex_bruto: "data/rinex_input/bruto/"
+diretorio_resultados: "data/results_output/"
+diretorio_logs: "logs/"
