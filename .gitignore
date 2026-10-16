@@ -6,3 +6,5 @@ venv/
 .env
 data/
 logs/
+.DS_Store
+Thumbs.db

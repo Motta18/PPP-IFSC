@@ -1,4 +1,4 @@
-# PPP IBGE e comparação com RBMC
+﻿# PPP IBGE e comparação com RBMC
 
 Aplicação em Python com interface Streamlit para automatizar o envio de arquivos RINEX ao serviço PPP do IBGE e comparar os resultados com a coordenada oficial da RBMC/BDG.
 
